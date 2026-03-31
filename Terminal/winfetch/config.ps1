@@ -81,7 +81,7 @@
 # the following to **enable** their output.
 
 @(
-    $image ="C:\Users\AYAN AHMED\.config\winfetch\TNLogo.png"
+    $image ="C:\Users\AEON\.config\winfetch\TNLogo.png"
     # $logo = "Windows 7"
     "title"
     "dashes"

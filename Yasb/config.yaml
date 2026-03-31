@@ -357,7 +357,7 @@ widgets:
       # Example path to folder with images. Can be a single string or a list of strings.
       # image_path: "C:\\Users\\{Username}\\Images" 
       image_path: 
-        - "C:\\Users\\AYAN AHMED\\Pictures\\Wallpaper"
+        - "C:\\Users\\%USERNAME%\\etcc"
         - "D:\\Wallpapers\\Nature"
       change_automatically: false # Automatically change wallpaper
       update_interval: 60 # If change_automatically is true, update interval in seconds

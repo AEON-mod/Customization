@@ -8,4 +8,4 @@ Windows Registry Editor Version 5.00
 "Segoe UI Semibold (TrueType)"="" 
 "Segoe UI Symbol (TrueType)"=""
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
-"Segoe UI"="PUT NAME HERE with Exact letters"
+"Segoe UI"="YOUR_FONT_NAME_HERE"

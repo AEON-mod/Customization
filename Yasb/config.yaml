@@ -1,0 +1,458 @@
+watch_stylesheet: true
+watch_config: true
+debug: false
+update_check: true # Enable automatic update check.
+
+glazewm:
+  start_command: "glazewm.exe start"
+  stop_command: "glazewm.exe command wm-exit"
+  reload_command: "glazewm.exe command wm-exit && glazewm.exe start"
+  
+bars:
+  primary-bar:
+    enabled: true
+    screens: ["primary"]
+    class_name: "yasb-bar"
+    alignment:
+      position: "top"
+      center: false
+    animation:
+      enabled: true
+      duration: 1000
+    blur_effect:
+      enabled: true
+      acrylic: false
+      dark_mode: true
+      round_corners: true
+      round_corners_type: "normal"
+      #border_color: "#89b4fa"
+    window_flags:
+      always_on_top: false
+      windows_app_bar: true
+    dimensions:
+      width: "100%"
+      height: 35
+    padding:
+      top: 1
+      left: 2
+      bottom: 0
+      right: 2
+    widgets:
+      left: 
+        [
+          # "task_view",   # If desired, you can replace the "task_view" and "home" widgets.
+          "home",
+          "wallpapers",
+          "windows_workspaces", 
+          "taskbar", 
+          "media",
+          
+        ]
+      center: 
+        [
+          "cava_left",
+          "clock",
+          "cava_right"
+        ]
+      right: 
+        [
+          "traffic",
+          "cpu", 
+          "gpu",
+          "memory", 
+          #"apps", 
+          "power_menu"
+        ]
+
+widgets:
+  # task_view:
+  #   type: "yasb.custom.CustomWidget"
+  #   options:
+  #     label: "<span>\ue62a</span>"
+  #     label_alt: "<span>\ue62a</span>"
+  #     class_name: "task-view-widget"
+  #     callbacks:
+  #       on_left: "exec explorer.exe shell:::{3080F90E-D7AD-11D9-BD98-0000947B0257}"
+  #       on_middle: "do_nothing"
+  #       on_right: "do_nothing"
+
+  home:
+      type: "yasb.home.HomeWidget"
+      options:
+        label: "<span>\ue62a</span>"
+        system_menu: true
+        power_menu: true
+        blur: true
+        border_color: "system"
+        round_corners_type: "normal"
+        menu_labels:
+          about: "\ue66A  About This PC"
+          system: "\uF423  System Settings"
+          task_manager: "\uf437  Task Manager"
+          hibernate: "\uf28e  Hibernate"
+          sleep: "\u23fe  Sleep"
+          restart: "\uead2  Restart"
+          shutdown: "\uf011  Shutdown"
+          lock: "\uea75  Lock"
+          logout: "\udb80\udf43  Logout"
+        menu_list:
+          - { title: "\uE617  User Home", path: "~" }
+          - { title: "\udb80\udd20  Download", path: "~\\Downloads" }
+          - { title: "\udb80\ude1a  Documents", path: "~\\Documents" }
+          - { title: "\uf03e  Pictures", path: "~\\Pictures" }
+
+  windows_workspaces:
+      type: "yasb.windows_desktops.WorkspaceWidget"
+      options:
+        label_workspace_btn: "\udb81\udc3d"
+        label_workspace_active_btn: "\udb81\udc3e"
+        btn_shadow:
+          enabled: true
+          color: "black"
+          radius: 3
+          offset: [ 1, 1 ]
+
+  taskbar:
+      type: "yasb.taskbar.TaskbarWidget"
+      options:
+        icon_size: 16
+        animation:
+          enabled: true
+        preview:
+          enabled: true
+          width: 250
+          delay: 400
+          padding: 12
+        callbacks:
+          on_middle: "close_app"
+
+  media:
+      type: "yasb.media.MediaWidget"
+      options:
+        label: "<span>\udb80\udf87</span> {title}"
+        label_alt: "<span>\udb80\udf87</span> {title} - {artist}"
+        hide_empty: true
+        callbacks:
+          on_left: "toggle_media_menu"
+          on_middle: "do_nothing"
+          on_right: "toggle_label"
+        max_field_size:
+          label: 45
+          label_alt: 80
+        show_thumbnail: false
+        controls_only: false
+        controls_left: false
+        thumbnail_alpha: 80
+        thumbnail_padding: 8
+        thumbnail_corner_radius: 16
+        icons:
+          prev_track: "\udb81\udcae"
+          next_track: "\udb81\udcad"
+          play: "\udb81\udc0a"
+          pause: "\udb80\udfe4"
+        media_menu:
+          blur: true
+          round_corners: true
+          round_corners_type: "normal"
+          alignment: "right"
+          direction: "down"
+          offset_top: 6
+          offset_left: 10
+          thumbnail_corner_radius: 8
+          thumbnail_size: 120
+          max_title_size: 80
+          max_artist_size: 20
+          show_source: true
+        media_menu_icons:
+          play: "\ue768"
+          pause: "\ue769"
+          prev_track: "\ue892"
+          next_track: "\ue893"
+        label_shadow:
+          enabled: true
+          color: "black"
+          radius: 3
+          offset: [1, 1]
+
+  clock:
+      type: "yasb.clock.ClockWidget"
+      options:
+        label: "{%I:%M:%S}"    #Add %p after %S to add AM or PM
+        label_alt: "{%A %d %B %Y %H:%M:%S}"
+        # locale: 'en_EN'  # Language for date, you can set your own, example fr_FR
+        timezones: []  # Looking up time zone info from registry
+        # timezones: ["America/Montreal"]
+        calendar:
+          blur: true
+          round_corners: true
+          round_corners_type: "normal"
+          border_color: "system"
+          alignment: "center"
+          direction: "down"
+          show_holidays: true
+          show_week_numbers: true
+          holiday_color: "#FF6464"
+
+  cpu:
+    type: "yasb.cpu.CpuWidget"
+    options:
+      label: "<span>\uf4bc</span> {info[percent][total]}%"
+      label_alt: "<span>\uf437</span> {info[freq][current]} MHz"
+      update_interval: 2000
+      cpu_thresholds:
+        low: 25
+        medium: 50
+        high: 90
+      histogram_icons:
+        - "\u2581" # 0%
+        - "\u2581" # 10%
+        - "\u2582" # 20%
+        - "\u2583" # 30%
+        - "\u2584" # 40%
+        - "\u2585" # 50%
+        - "\u2586" # 60%
+        - "\u2587" # 70%
+        - "\u2588" # 80%+
+      histogram_num_columns: 8
+      callbacks:
+        on_left:  "toggle_menu"
+        on_right: "toggle_label"
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+      menu:
+        enabled: true
+        show_graph: true
+        show_graph_grid: true
+        graph_history_size: 60
+
+  gpu:
+      type: "yasb.gpu.GpuWidget"
+      options:
+        label: "<span>\uf4bc</span> {info[temp]}°C"
+        label_alt: "<span>\uf4bc</span> {info[temp]}°C | {info[mem_used]} / {info[mem_total]}"
+        update_interval: 2000
+        gpu_thresholds:
+          low: 25
+          medium: 50
+          high: 90
+        histogram_icons:
+          - "\u2581"  # 0%
+          - "\u2581"  # 10%
+          - "\u2582"  # 20%
+          - "\u2583"  # 30%
+          - "\u2584"  # 40%
+          - "\u2585"  # 50%
+          - "\u2586"  # 60%
+          - "\u2587"  # 70%
+          - "\u2588"  # 80%+
+        histogram_num_columns: 8
+        callbacks:
+          on_left: "do_nothing"
+          on_middle: "exec cmd /c Taskmgr"
+          on_right: "toggle_label"
+
+  memory:
+      type: "yasb.memory.MemoryWidget"
+      options:
+        label: "<span>\uefc5</span> {virtual_mem_used} / {virtual_mem_total}"
+        label_alt: "<span>\ueea1</span> VIRT: {virtual_mem_percent}% SWAP: {swap_mem_percent}%"
+        update_interval: 5000
+        callbacks:
+          on_left: "toggle_menu"
+          on_middle: "do_nothing"
+          on_right: "toggle_label"
+        menu:
+          enabled: true
+          show_graph: true
+          show_graph_grid: true
+          graph_history_size: 60
+        memory_thresholds:
+          low: 25
+          medium: 50
+          high: 90
+        histogram_icons:
+          - "\u2581"  # 0%
+          - "\u2581"  # 10%
+          - "\u2582"  # 20%
+          - "\u2583"  # 30%
+          - "\u2584"  # 40%
+          - "\u2585"  # 50%
+          - "\u2586"  # 60%
+          - "\u2587"  # 70%
+          - "\u2588"  # 80%+
+        label_shadow:
+          enabled: true
+          color: "black"
+          radius: 3
+          offset: [ 1, 1 ]
+
+  traffic:
+      type: "yasb.traffic.TrafficWidget"
+      options:
+        label: "<span class='download'>\uea9a {download_speed}</span><span class='upload'>{upload_speed} \ueaa1</span>"
+        label_alt: "<span class='download'>\uea9a {download_speed}</span><span class='upload'>{upload_speed} \ueaa1</span>"
+        update_interval: 1000
+        hide_if_offline: true
+        speed_unit: "bytes"
+        max_label_length_align: "center"
+        menu:
+          blur: true
+          round_corners: true
+          round_corners_type: "normal"
+          border_color: "system"
+          alignment: "center"
+          direction: "down"
+        callbacks:
+          on_left: "toggle_menu"
+          on_middle: "exec cmd.exe /c start ms-settings:network-status"
+          on_right: "do_nothing"
+        label_shadow:
+          enabled: false
+          color: "black"
+          radius: 3
+          offset: [ 1, 1 ]
+
+  apps:
+      type: "yasb.applications.ApplicationsWidget"
+      options:
+        label: "{data}"
+        app_list:
+          # - { icon: "\uf0a2", launch: "notification_center" }
+          # - { icon: "\ueb51", launch: "quick_settings" }
+          - { icon: "\uf46a", launch: "cmd /c start ms-settings:windowsupdate" }
+          # - { icon: "\uf422", launch: "search" }
+          - { icon: "\ueb03", launch: "cmd /c Taskmgr", name: "Task Manager" }
+          - { icon: "\uf489", launch: "wt", name: "Windows Terminal" }
+          - { icon: "\udb82\ude1e", launch: "cmd /c code", name: "VS Code" }
+          - { icon: "\uf1b6", launch: "C:/Program Files (x86)/Steam/Steam.exe", name: "Steam" }
+        container_padding:
+          top: 0
+          left: 8
+          bottom: 0
+          right: 8
+
+  power_menu:
+    type: "yasb.power_menu.PowerMenuWidget"
+    options:
+      label: "\uf011"
+      uptime: True
+      blur: False
+      blur_background: True
+      animation_duration: 200
+      button_row: 5
+      buttons:
+        shutdown: ["\uf011", "Bye Bye"]
+        restart: ["\uead2", "Re-start"]
+        signout: ["\udb80\udf43", "LOCK SCreen"]
+        hibernate: ["\uf28e", "Hibernate"]
+        sleep: ["\u23fe", "Sleepy"]
+        cancel: ["", "Im Good "]
+  wallpapers:
+    type: "yasb.wallpapers.WallpapersWidget"
+    options:
+      label: "<span>\udb83\ude09</span>"
+      # Example path to folder with images. Can be a single string or a list of strings.
+      # image_path: "C:\\Users\\{Username}\\Images" 
+      image_path: 
+        - "C:\\Users\\AYAN AHMED\\Pictures\\Wallpaper"
+        - "D:\\Wallpapers\\Nature"
+      change_automatically: false # Automatically change wallpaper
+      update_interval: 60 # If change_automatically is true, update interval in seconds
+      gallery:
+          enabled: true
+          blur: true
+          image_width: 220
+          image_per_page: 6
+          gallery_columns: 0 # 0 = auto, matches image_per_page for a single row
+          horizontal_position: "center" # left/center/right placement on screen
+          vertical_position: "center" # top/center/bottom placement
+          position_offset: 0 # minimum gap (px) from screen edges - see below for advanced options
+          respect_work_area: true # clamp to OS work area (avoids Windows taskbar)
+          show_buttons: false
+          orientation: "portrait"
+          image_spacing: 8
+          lazy_load: true
+          lazy_load_fadein: 400
+          image_corner_radius: 12
+      run_after: # List of functions to run after wallpaper is updated
+        - "wal -s -t -e -q -n -i {image}" # Example command to run after wallpaper is updated
+        - "cmd.exe /c start /min pwsh ./yasb.ps1" # Example command to run after wallpaper is updated
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+      callbacks:
+        on_left: "toggle_gallery"
+        on_middle: "do_nothing"
+        on_right: "change_wallpaper"
+  cava:
+    type: "yasb.cava.CavaWidget"
+    options:
+      bar_height: 25
+      min_bar_height: 0
+      gradient: 1
+      foreground: "#89b4fa"
+      gradient_color_1: '#74c7ec'
+      gradient_color_2: '#89b4fa'
+      gradient_color_3: '#cba6f7'
+      bars_number: 30
+      bar_spacing: 2
+      bar_width: 4
+      bar_type: "bars"
+      framerate: 120
+      hide_empty: true
+  cava_left:
+    type: "yasb.cava.CavaWidget"
+    options:
+      bar_height: 32
+      min_bar_height: 1
+      gradient: 1
+      foreground: "#800000"
+      gradient_color_1: '#A04040'
+      gradient_color_2: '#C08080'
+      gradient_color_3: '#ffffff'
+      bars_number: 48
+      bar_spacing: 2
+      bar_width: 5
+      bar_type: "bars"
+      framerate: 90
+      hide_empty: true
+      channels: mono
+      mono_option: left
+      monstercat: 1
+      edge_fade: [30, 0]
+      noise_reduction: 16
+      lower_cutoff_freq: 20
+      higher_cutoff_freq: 20000
+      output_bit_format: "8bit"
+      sensitivity: 120
+      reverse: 1
+  cava_right:
+    type: "yasb.cava.CavaWidget"
+    options:
+      bar_height: 32
+      min_bar_height: 1
+      gradient: 1
+      foreground: "#000080"
+      gradient_color_1: '#4040A0'
+      gradient_color_2: '#8080C0'
+      gradient_color_3: '#ffffff'
+      bars_number: 48
+      bar_spacing: 2
+      bar_width: 5
+      bar_type: "bars"
+      framerate: 90
+      hide_empty: true
+      channels: mono
+      mono_option: right
+      monstercat: 1
+      edge_fade: [0, 30]
+      noise_reduction: 16
+      lower_cutoff_freq: 20
+      higher_cutoff_freq: 20000
+      output_bit_format: "8bit"
+      sensitivity: 120    

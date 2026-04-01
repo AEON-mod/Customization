@@ -25,7 +25,7 @@ bars:
       dark_mode: true
       round_corners: true
       round_corners_type: "normal"
-      border_color: "#89b4fa"
+      #border_color: "#89b4fa"
     window_flags:
       always_on_top: false
       windows_app_bar: true
@@ -44,6 +44,7 @@ bars:
           "home",
           "wallpapers",
           "windows_workspaces", 
+          #"apps",
           "taskbar", 
           "media",
           
@@ -59,8 +60,7 @@ bars:
           "traffic",
           "cpu", 
           "gpu",
-          "memory", 
-          #"apps", 
+          "memory",  
           "power_menu"
         ]
 
@@ -215,7 +215,7 @@ widgets:
         - "\u2588" # 80%+
       histogram_num_columns: 8
       callbacks:
-        on_left:  "toggle_menu"
+        on_left: "toggle_menu"
         on_right: "toggle_label"
       label_shadow:
         enabled: true
@@ -232,7 +232,7 @@ widgets:
       type: "yasb.gpu.GpuWidget"
       options:
         label: "<span>\uf4bc</span> {info[temp]}°C"
-        label_alt: "<span>\uf4bc</span> {info[temp]}°C | {info[mem_used]} / {info[mem_total]}"
+        label_alt: "<span>\uf4bc</span> {info[utilization]}% {info[utilization]}% | {info[mem_used]} / {info[mem_total]}"
         update_interval: 2000
         gpu_thresholds:
           low: 25
@@ -250,9 +250,14 @@ widgets:
           - "\u2588"  # 80%+
         histogram_num_columns: 8
         callbacks:
-          on_left: "do_nothing"
+          on_left: "toggle_menu"
           on_middle: "exec cmd /c Taskmgr"
           on_right: "toggle_label"
+        menu:
+          enabled: true
+          show_graph: true
+          show_graph_grid: true
+          graph_history_size: 60  
 
   memory:
       type: "yasb.memory.MemoryWidget"
@@ -350,6 +355,7 @@ widgets:
         hibernate: ["\uf28e", "Hibernate"]
         sleep: ["\u23fe", "Sleepy"]
         cancel: ["", "Im Good "]
+
   wallpapers:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
@@ -357,7 +363,7 @@ widgets:
       # Example path to folder with images. Can be a single string or a list of strings.
       # image_path: "C:\\Users\\{Username}\\Images" 
       image_path: 
-        - "C:\\Users\\%USERNAME%\\etcc"
+        - "C:\\Users\\AEON\\Pictures\\Wallpaper"
         - "D:\\Wallpapers\\Nature"
       change_automatically: false # Automatically change wallpaper
       update_interval: 60 # If change_automatically is true, update interval in seconds
@@ -389,6 +395,7 @@ widgets:
         on_left: "toggle_gallery"
         on_middle: "do_nothing"
         on_right: "change_wallpaper"
+
   cava_left:
     type: "yasb.cava.CavaWidget"
     options:
@@ -415,6 +422,7 @@ widgets:
       output_bit_format: "8bit"
       sensitivity: 120
       reverse: 1
+      
   cava_right:
     type: "yasb.cava.CavaWidget"
     options:

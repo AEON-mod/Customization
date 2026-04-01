@@ -1,6 +1,6 @@
 # Raunmeter Skins
 
-Custom skins for Raunmeter – personalize your experience with unique visual themes!
+Custom skins for Rainmeter – personalize your experience with unique visual themes!
 
 ## 📥 Download Instructions
 

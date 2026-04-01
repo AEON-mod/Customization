@@ -1,4 +1,4 @@
-# Raunmeter Skins
+# Rainmeter Skins
 
 Custom skins for Rainmeter – personalize your experience with unique visual themes!
 

@@ -25,7 +25,7 @@ bars:
       dark_mode: true
       round_corners: true
       round_corners_type: "normal"
-      #border_color: "#89b4fa"
+      border_color: "#89b4fa"
     window_flags:
       always_on_top: false
       windows_app_bar: true
@@ -44,7 +44,7 @@ bars:
           "home",
           "wallpapers",
           "windows_workspaces", 
-          #"apps",
+          #"apps",     # If you want the widget remove #
           "taskbar", 
           "media",
           

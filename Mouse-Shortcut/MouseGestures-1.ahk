@@ -1,4 +1,9 @@
-﻿#Requires AutoHotkey v2.0
+; ==============================================================================
+; Project: AEON-mod (Advanced Mouse Gestures)
+; Version: 4.2
+; GitHub:  [https://github.com/AEON-mod]
+; ==============================================================================
+#Requires AutoHotkey v2.0
 #SingleInstance Force
 
 ; --- AUTO-ADMINISTRATOR ---

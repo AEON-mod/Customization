@@ -20,7 +20,7 @@ A lightweight, high-performance AutoHotkey v2 script designed to supercharge you
 
 **For quick startup drop the file in startup folder**
 
- C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+   C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
  
 🛡️ Why Administrator Privileges?
 This script includes an Auto-Admin block. It requires elevated permissions for two critical reasons:

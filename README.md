@@ -4,7 +4,7 @@ A collection of configuration files, scripts, and tweaks to transform your deskt
 📁 Repository Structure
 | Folder | Description |
 |---|---|
-| App Transparency Script | Scripts to enable transparency/opacity on various Windows applications. |
+| Window Transparency Script | Scripts to enable transparency/opacity on various Windows applications. |
 | Explorer Blur-Mica | Tweaks to add Mica or Blur effects to the Windows File Explorer. |
 | Font Change Commands | PowerShell or CMD scripts to quickly swap system fonts. |
 | RainMeter | Custom skins or layouts for the Rainmeter desktop customization tool. |

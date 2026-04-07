@@ -24,8 +24,8 @@
  2. Go to **Details** and find your game (e.g., Overwatch.exe).
  3. Open MouseGestures-1.ahk and add it to the TargetGames list:
    > TargetGames := "ahk_exe Valorant.exe, ahk_exe Overwatch.exe"
-   
-  > **For quick startup drop the file in startup folder: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup**
+ 4. **For quick startup drop the file in startup folder:**
+   > C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
 ## 🛡️ Setup (The "Pro" Way)
 To make **MouseGestures-1** feel like a built-in Windows feature (running with Admin rights but without the annoying popups):
  1. Open **Task Scheduler** and **Create Task**.

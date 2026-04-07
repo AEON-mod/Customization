@@ -18,6 +18,9 @@ A lightweight, high-performance AutoHotkey v2 script designed to supercharge you
  * Download the Script: Save the code as MouseGestures.ahk.
  * Run as Administrator: The script includes an auto-elevation block. When prompted by Windows (UAC), click Yes to allow the script to send commands to restricted apps (like Task Manager or Browsers).
 
+**For quick startup drop the file in startup folder**
+ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+ 
 🛡️ Why Administrator Privileges?
 This script includes an Auto-Admin block. It requires elevated permissions for two critical reasons:
  * System Window Interaction: Without Admin rights, Windows prevents scripts from "clicking" or "typing" inside protected windows like Task Manager, Command Prompt, Registry Editor, and even some parts of File Explorer.

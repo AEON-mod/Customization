@@ -1,49 +1,42 @@
-# 🖱️ AEON-mod: Advanced Mouse Gestures (v4.3.1)
-A high-performance Windows optimization script that adds powerful multi-click and spatial gestures to any mouse. Engineered for digital creators and power users who want a seamless, keyboard-free workflow.
-
-## ✨ Core Gestures
-| Action | Gesture |
-|---|---|
-| **Copy** (Ctrl+C) | Double Right Click |
-| **Select All** (Ctrl+A) | Triple Right Click |
-| **Paste** (Ctrl+V) | Triple Left Click |
-| **Back / Forward** | Right Click + Swipe Left/Right |
-| **Clipboard History** | Hold Left Click + Tap Right Click |
-| **Snipping Tool** | Hold Left Click + Hold Right Click (0.3s) |
-| **Task View** (Win+Tab) | Hover Cursor at Top Edge of Screen (1s) |
-
-## 🎮 Smart Game Detection (New!)
-AEON-mod is now **Gaming-Aware**. To ensure 100% compatibility with Anti-Cheat systems (Vanguard, EAC, Ricochet) and to prevent accidental "Pastes" during gameplay, the script:
- * **Auto-Suspends:** Instantly disables all gestures when a game window is active.
- * **Auto-Resumes:** Re-enables all features the moment you Alt-Tab out or close the game.
- * **Visual Feedback:** The System Tray icon turns **Red** when paused and **Green** when active.
-> **Manual Toggle:** Press the **Scroll Lock** key at any time to manually pause/resume the script.
-> 
-## 🛡️ Setup & Permissions
-### Why Administrator?
-This script requires **Run as Administrator** to interact with protected system windows like Task Manager, elevated Command Prompts, and certain File Explorer menus. Without this, Windows blocks the script's ability to send shortcuts for security.
-
-***For quick startup drop the file in startup folder:
-C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup***
-
-### Bypass UAC (Permanent Admin)
-To start AEON-mod automatically without the Windows permission popup:
- 1. Open **Task Scheduler** and click **Create Task**.
- 2. Under **General**, check **Run with highest privileges**.
- 3. Under **Triggers**, set it to **At log on**.
- 4. Under **Actions**, point it to your AutoHotkey64.exe and add the script path as an argument:
-   * Program: "C:\Program Files\AutoHotkey\v2\AutoHotkey64.exe"
-   * Arguments: "C:\Path\To\Your\AEON-mod.ahk"
- 5. Under **Conditions**, uncheck **Start only if on AC power**.
-
-## ⚙️ Resource Impact
- * **CPU Usage:** < 0.1% (Event-driven logic).
- * **RAM Usage:** ~5MB.
- * **Latency:** Zero. The script uses low-level Windows hooks for instantaneous response.
-
-## 🛑 Emergency Exit
-Press **Shift + Escape** to kill the process immediately.
-### How to add new games:
-Open the .ahk file and locate the TargetGames variable. Simply add the .exe name of your game to the list:
-TargetGames := "ahk_exe Valorant.exe, ahk_exe MyNewGame.exe"
-
+# 🛸 MouseGestures-1
+### *The Ultimate Windows Navigation Engine*
+**Stop stretching for your keyboard.** MouseGestures-1 transforms any standard mouse into a productivity powerhouse. By mapping complex Windows shortcuts to intuitive multi-clicks and spatial "swipes," you can navigate, code, and create without ever lifting your hand.
+## 🚀 Why Use It?
+ * **Ergonomic Efficiency:** Reduce wrist strain by eliminating repetitive Ctrl+C/V stretches.
+ * **Invisible UI:** No extra buttons needed—just the mouse you already own.
+ * **Zero Bloat:** Uses **<0.1% CPU** and **~5MB RAM**. It’s lighter than a single browser tab.
+## ✨ The Gesture Library
+| Action | Mouse Input | Result |
+|---|---|---|
+| **📋 Copy** | Double Right Click | Instantly copy selection |
+| **✅ Select All** | Triple Right Click | Highlight everything |
+| **📥 Paste** | Triple Left Click | Paste from clipboard |
+| **🧭 Navigate** | Right Click + Swipe | Left = Back | Right = Forward |
+| **🗂️ History** | Hold Left + Tap Right | Open Clipboard History |
+| **📸 Screenshot** | Hold Left + Hold Right | Trigger Snipping Tool |
+| **🖥️ Task View** | Hover Top Edge (1s) | See all open windows |
+## 🎮 Intelligence: "Gamer-Safe" Mode
+**MouseGestures-1** is built for enthusiasts. It features a **Smart-Sense Timer** that detects when you are in a game and automatically **Suspends** itself.
+ * **100% Anti-Cheat Compatible:** It stops "hooking" your mouse when a game is active.
+ * **Visual Feedback:** The tray icon turns **🔴 Red (Paused)** when gaming and **🟢 Green (Active)** on your desktop.
+### 🛠️ Adding Your Games
+ 1. Open **Task Manager** (Ctrl+Shift+Esc).
+ 2. Go to **Details** and find your game (e.g., Overwatch.exe).
+ 3. Open MouseGestures-1.ahk and add it to the TargetGames list:
+   > TargetGames := "ahk_exe Valorant.exe, ahk_exe Overwatch.exe"
+   >
+   ***For quick startup drop the file in startup folder: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup***
+## 🛡️ Setup (The "Pro" Way)
+To make **MouseGestures-1** feel like a built-in Windows feature (running with Admin rights but without the annoying popups):
+ 1. Open **Task Scheduler** and **Create Task**.
+ 2. **General:** Check Run with highest privileges.
+ 3. **Triggers:** Set to At log on.
+ 4. **Actions:** * Program: Browse to AutoHotkey64.exe
+   * Arguments: Paste the path to "C:\...\MouseGestures-1.ahk"
+ 5. **Conditions:** Uncheck Start only if on AC power.
+## 🛑 Control Center
+ * **Pause/Resume:** Scroll Lock (Manual toggle)
+ * **Instant Kill:** Shift + Escape (Panic button)
+### 📡 Developer Note
+Designed for the **AEON-mod** ecosystem. If you’re a coder, digital creator, or just a power user, this is the missing piece of your Windows experience.
+**Ready to fly?** Just run the script. 🖱️✨

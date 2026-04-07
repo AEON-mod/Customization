@@ -1,8 +1,8 @@
 ; ==============================================================================
 ; Project: AEON-mod (Advanced Mouse Gestures)
-; Version: 4.2
-; GitHub:  [https://github.com/AEON-mod]
+; Version: 4.3.1 (Auto-Game Pause)
 ; ==============================================================================
+
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
@@ -16,12 +16,39 @@ if !A_IsAdmin {
 T := 400 
 SwipeDist := 50 
 
+; --- GAME DETECTION LIST ---
+; Add your game process names here (find them in Task Manager -> Details)
+TargetGames := "ahk_exe Valorant-Win64-Shipping.exe, ahk_exe Minecraft.exe, ahk_exe FortniteClient-Win64-Shipping.exe, ahk_exe cs2.exe"
+
+; Check every 2 seconds if a game is active
+SetTimer(CheckForGames, 2000)
+
+CheckForGames() {
+    Loop Parse, TargetGames, ","
+    {
+        if WinActive(Trim(A_LoopField)) {
+            if !A_IsSuspended {
+                Suspend(True) ; Pause all hotkeys for Anti-Cheat safety
+                TraySetIcon("shell32.dll", 110) ; Change icon to "Paused" (Red X)
+            }
+            return
+        }
+    }
+    
+    ; If no games are active, resume normal operation
+    if A_IsSuspended {
+        Suspend(False)
+        TraySetIcon() ; Restore original Green H icon
+    }
+}
+
+; --- MANUAL OVERRIDE (Toggle) ---
+ScrollLock::Suspend ; Press Scroll Lock if you want to pause it manually
+
 ; --- THE "IGNORE" REGION ---
-; This ensures X1 and X2 (and their variations) are passed 
-; directly to Windows without any delay or blocking.
 ~*XButton1::return
 ~*XButton2::return
-~*MButton::return ; Added Middle Click to the ignore list just in case
+~*MButton::return
 
 ; --- LEFT CLICK: TRIPLE CLICK PASTE ---
 ~LButton:: {
@@ -43,7 +70,6 @@ RButton:: {
     MouseGetPos(&x1, &y1)
     Start := A_TickCount
     
-    ; 1. SNIPPING TOOL & CLIPBOARD (Hold Left, then Right)
     if GetKeyState("LButton", "P") {
         timedOut := !KeyWait("RButton", "T0.3") 
         if (timedOut)
@@ -58,7 +84,6 @@ RButton:: {
     Duration := A_TickCount - Start
     MouseGetPos(&x2, &y2)
     
-    ; 2. SWIPE LOGIC
     distX := x2 - x1
     if (Abs(distX) > SwipeDist) {
         if (distX > 0)
@@ -69,7 +94,6 @@ RButton:: {
         return
     }
 
-    ; 3. MULTI-CLICK LOGIC
     if (A_PriorHotkey = "RButton" and A_TimeSincePriorHotkey < T)
         rClicks++
     else
@@ -103,6 +127,8 @@ RButton:: {
 SetTimer(CheckTopEdge, 100)
 CheckTopEdge() {
     static HoverStart := 0
+    if A_IsSuspended return 
+    
     MouseGetPos(, &y)
     if (y <= 1) {
         if (HoverStart = 0) 
@@ -118,4 +144,4 @@ CheckTopEdge() {
 }
 
 ; --- KILL SWITCH ---
-+Esc::ExitApp() ; Shift + Escape to close
++Esc::ExitApp()

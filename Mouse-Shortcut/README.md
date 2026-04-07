@@ -19,6 +19,7 @@ A lightweight, high-performance AutoHotkey v2 script designed to supercharge you
  * Run as Administrator: The script includes an auto-elevation block. When prompted by Windows (UAC), click Yes to allow the script to send commands to restricted apps (like Task Manager or Browsers).
 
 **For quick startup drop the file in startup folder**
+
  C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
  
 🛡️ Why Administrator Privileges?

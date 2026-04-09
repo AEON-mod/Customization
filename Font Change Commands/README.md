@@ -2,11 +2,15 @@ PC Font Changer ⚡
 Quickly change your Windows PC fonts using simple registry tweak files! No coding needed.
 🌟 Features
 Feature	Description
+
 🎨 Custom Fonts	Change to any installed font on your PC
+
 🚀 One-Click	Just rename .txt to .reg and run
+
 ↩️ Easy Revert	Restore default fonts instantly
-🪟 Windows 10/11	Tested and working on latest Windows
-📝 Simple Edit	Only need to type your font name
+
+🪟 Windows 10/11	Tested and working on latest Windows📝 Simple Edit	Only need to type your font name
+
 📋 How to Use
 Step 1: Install Your Font First
 Download font file (.ttf or .otf)

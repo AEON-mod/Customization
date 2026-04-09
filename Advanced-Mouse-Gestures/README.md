@@ -1,7 +1,7 @@
 # 🛸 AeonGlide
 ### *The Workflow Exploit.*
 **Windows is the bottleneck. AeonGlide is the bypass.** Let's be real: reaching for the keyboard for basic commands is a legacy habit for standard users. **AeonGlide** is a system-level "cheat" that injects custom input logic directly into your mouse. It re-wires how your hardware communicates with the OS, giving you an unfair speed advantage by keeping your hands exactly where they belong.
-## 🚀 The Unfair Advantage
+## 🚀 The Advantage
  * **Custom Input Injection:** Forget the standard Ctrl+C/V or Win+Tab grind. AeonGlide maps high-speed, custom-defined macros to intuitive mouse triggers, allowing you to out-maneuver any standard setup.
  * **Stealth Protocol:** Operates as a silent background hook. No UI, no bloat, no footprint. It’s a "ghost" utility that provides elite-tier functionality without the "gamer-brand" software tax.
  * **Gamer-Safe Bypass:** Built with an "Anti-Detection" timer. The script recognizes game-engine signatures and self-suspends instantly, ensuring your competitive integrity stays clean while your desktop workflow stays "cheated."

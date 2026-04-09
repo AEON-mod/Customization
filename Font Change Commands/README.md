@@ -1,19 +1,12 @@
 PC Font Changer ⚡
 Quickly change your Windows PC fonts using simple registry tweak files! No coding needed.
-
 🌟 Features
 Feature	Description
-
 🎨 Custom Fonts	Change to any installed font on your PC
-
 🚀 One-Click	Just rename .txt to .reg and run
-
 ↩️ Easy Revert	Restore default fonts instantly
-
 🪟 Windows 10/11	Tested and working on latest Windows
-
 📝 Simple Edit	Only need to type your font name
-
 📋 How to Use
 Step 1: Install Your Font First
 Download font file (.ttf or .otf)
@@ -32,7 +25,6 @@ Find this line:
 text
 YOUR_FONT_NAME_HERE
 Replace with EXACT font name (case-sensitive!)
-
 ✅ Correct: Segoe UI, Arial, Roboto
 
 ❌ Wrong: segoe ui, ARIAL, roboto light
@@ -53,7 +45,6 @@ Rename to font-changer-to-default.reg
 Double-click → Yes → Yes
 
 Restart PC
-
 ⚠️ Critical Warnings
 Do ✅	Don't ❌
 Edit font-changer.txt	Edit font-changer-to-default.txt
@@ -66,7 +57,6 @@ Press Win + R → type control fonts → Enter
 Find your font → copy the exact name
 
 Paste into font-changer.txt
-
 📁 File Structure
 text
 PC-Font-Changer/
@@ -98,7 +88,6 @@ Editing font-changer.txt with Notepad
 Registry prompt when running .reg file
 
 Finding exact font name in Windows Fonts settings
-
 💡 Example Usage
 Want to use "Roboto" font?
 
@@ -113,7 +102,6 @@ Want "Segoe UI SemiLight"?
 text
 Segoe UI SemiLight
 (Notice the space and capital L - must be exact!)
-
 ⚡ Quick Command Reference
 bash
 # Windows PowerShell to find installed fonts

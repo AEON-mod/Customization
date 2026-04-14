@@ -34,7 +34,7 @@ To make **AeonGlide** feel like a built-in Windows feature (running with Admin r
  1. Open **Task Scheduler** and **Create Task**.
  2. **General:** Check Run with highest privileges.
  3. **Triggers:** Set to At log on.
- 4. **Actions:** * Program: Browse to AutoHotkey64.exe
+ 4. **Actions:** * Program: Browse to AutoHotkey64.exe (C:\Program Files\AutoHotkey\v2\AutoHotkey64.exe)
    * Arguments: Paste the path to your script: "C:\...\AeonGlide.ahk"
  5. **Conditions:** Uncheck Start only if on AC power.
 ## 🛑 Control Center

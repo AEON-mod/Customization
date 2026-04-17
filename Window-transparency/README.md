@@ -41,6 +41,7 @@ Part of the **AEON-mod** ecosystem, Lucidity ensures that your "ricing" configur
 2. Place it in your AEON-mod directory.
 3. Run the script. A "ghost" icon will appear in your System Tray.
 4. Use `Ctrl + Shift + LClick` on any window to start customizing its capacity.
+5. For autostart drop the file in startup folder.
 
 ---
 

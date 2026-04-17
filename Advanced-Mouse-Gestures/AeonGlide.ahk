@@ -121,13 +121,16 @@ RButton:: {
             rClicks := 0
         }
     }
-}
 
 ; --- TOP EDGE: TAB OVERVIEW ---
 SetTimer(CheckTopEdge, 100)
 CheckTopEdge() {
     static HoverStart := 0
-    if A_IsSuspended return 
+    
+    ; The Fix: Use braces for the 'if' statement to satisfy AHK v2
+    if (A_IsSuspended) {
+        return 
+    }
     
     MouseGetPos(, &y)
     if (y <= 1) {
@@ -142,6 +145,5 @@ CheckTopEdge() {
         HoverStart := 0
     }
 }
-
 ; --- KILL SWITCH ---
 +Esc::ExitApp()

@@ -2,7 +2,6 @@
 
 <img width="1917" height="856" alt="YASB Dashboard Main View" src="https://github.com/user-attachments/assets/3ad8acda-94b0-4bb2-9ce4-193dc507a4d5" />
 <img width="1761" height="1009" alt="YASB Dashboard Alt View" src="https://github.com/user-attachments/assets/b0dae5cc-eb34-4773-a4a4-304c8be572b8" />
-<img width="505" height="431" alt="CPU Monitor Widget" src="https://github.com/user-attachments/assets/297edbc5-fac3-49e7-b910-fb4232f98037" />
 
 ## Overview
 

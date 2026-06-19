@@ -1,131 +1,209 @@
-# AEON-mod: Customization Suite
+# ✨ AEON-mod: Customization Suite
 
-A comprehensive collection of configuration files, automation scripts, and system tweaks designed to transform your Windows desktop into a professional, aesthetically refined, and highly efficient workspace. This repository emphasizes visual clarity, modern UI enhancements, and productivity optimization through custom tooling.
+<div align="center">
 
-## 📋 Overview
+**Transform your Windows desktop into a professional, aesthetically refined, and highly efficient workspace**
 
-AEON-mod Customization provides production-ready solutions for:
-- **Visual Enhancement**: Transparency effects, blur filters, and modern UI components
-- **Productivity Automation**: Advanced mouse gesture controls and system shortcuts
-- **System Optimization**: Font management, terminal configuration, and status bar customization
-- **Cross-Application Theming**: Unified aesthetic across Windows, explorer, and development tools
+[![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)](https://github.com/AEON-mod/Customization)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+[![Last Updated](https://img.shields.io/badge/Updated-2026-lightgrey)]()
 
-## 📁 Repository Structure
+</div>
+
+---
+
+## 🎯 Overview
+
+AEON-mod Customization delivers **production-ready solutions** for transforming your Windows experience:
+
+| 🎨 | **Visual Enhancement** | Transparency effects, blur filters, and modern glassmorphism UI |
+|---|---|---|
+| ⚡ | **Productivity Automation** | Advanced mouse gesture controls and intelligent system shortcuts |
+| 🔧 | **System Optimization** | Font management, terminal configuration, and status bar customization |
+| 🎭 | **Unified Theming** | Consistent aesthetic across Windows, Explorer, and development tools |
+
+---
+
+## 📦 What's Inside
+
+### Core Modules
 
 | Module | Purpose | Status |
 |--------|---------|--------|
-| **Advanced-Mouse-Gestures** | System-level mouse gesture automation (AeonGlide) | Active |
-| **Window Transparency Script** | Enable transparency and opacity effects on applications | Active |
-| **Explorer Blur-Mica** | Apply Mica and blur effects to Windows File Explorer | Active |
-| **Font Change Commands** | Registry-based system font customization | Active |
-| **RainMeter** | Custom desktop widgets and monitoring skins | Active |
-| **Terminal** | Windows Terminal configuration and shell styling | Active |
-| **Windhawk** | System-level UI customization engine configurations | Active |
-| **Yasb** | Yet Another Status Bar configuration and themes | Active |
+| **🛸 Advanced Mouse Gestures (AeonGlide)** | System-level mouse automation — your workflow exploit | ✅ Active |
+| **🌫️ Window Transparency Script** | Enable transparency and opacity effects on any application | ✅ Active |
+| **✨ Explorer Blur-Mica** | Apply Mica and blur effects to Windows File Explorer | ✅ Active |
+| **🔤 Font Change Commands** | Registry-based system font customization | ✅ Active |
+| **🎚️ RainMeter** | Custom desktop widgets and system monitoring skins | ✅ Active |
+| **💻 Terminal** | Windows Terminal configuration with shell styling | ✅ Active |
+| **🛠️ Windhawk** | System-level UI customization engine configs | ✅ Active |
+| **📊 Yasb** | Yet Another Status Bar — customization & themes | ✅ Active |
+
+---
 
 ## 🎨 Design Philosophy
 
-- **Aesthetic**: Moody, high-contrast design optimized for dark mode environments
-- **Typography**: JetBrains Mono Nerd Font (customizable per user preference)
-- **Color Palette**: Carefully selected for visual hierarchy and minimal eye strain
-- **Minimalism**: Clean interfaces without unnecessary UI clutter
-- **Transparency**: Modern glassmorphism effects for depth and visual interest
+We believe in **beauty with purpose**:
+
+```
+Aesthetic     →  Moody, high-contrast design optimized for dark mode
+Typography   →  JetBrains Mono Nerd Font (customizable)
+Color Palette →  Carefully selected for visual hierarchy & minimal eye strain
+Minimalism   →  Clean interfaces without unnecessary clutter
+Transparency →  Modern glassmorphism for depth & visual interest
+```
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Windows 10 (Build 22H2) or Windows 11 (Build 23H2+)
-- Administrator privileges for system modifications
-- Individual tools as specified per module (Windhawk, RainMeter, YASB, etc.)
 
-### Installation
+- **Windows 10** (Build 22H2) or **Windows 11** (Build 23H2+)
+- **Administrator privileges** for system modifications
+- Individual tools per module (Windhawk, RainMeter, YASB, AutoHotkey v2)
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/AEON-mod/Customization.git
-   cd Customization
-   ```
+### Quick Start
 
-2. **Review module documentation**: Each folder contains a dedicated README with specific setup instructions
+```bash
+# 1. Clone the repository
+git clone https://github.com/AEON-mod/Customization.git
+cd Customization
 
-3. **Install required dependencies**:
-   - Windows Terminal (Microsoft Store)
-   - Windhawk (if using UI customizations)
-   - RainMeter (if using dashboard widgets)
-   - YASB (for status bar customization)
-   - AutoHotkey v2 (for gesture automation)
+# 2. Review module documentation (each folder has its own README)
 
-4. **Deploy configurations**: Follow individual module guides for installation and activation
+# 3. Install dependencies as needed per module
 
-## 📦 Key Features
+# 4. Deploy configurations (follow individual module guides)
+```
 
-### Advanced Mouse Gestures (AeonGlide)
-- Custom gesture-based command execution
-- Game-mode detection with anti-cheat compatibility
-- Silent background operation
-- Configurable trigger bindings
+### Installation Steps
 
-### System-Level Customization
-- Window transparency and blur effects
-- Explorer UI enhancement (Mica integration)
-- Font registry management
-- Desktop widget suite (RainMeter)
-- Terminal profile synchronization
-- Status bar customization (YASB)
+<details>
+<summary><strong>📥 Step 1: Dependencies</strong></summary>
 
-## ⚙️ Configuration
+Install these tools based on which modules you want to use:
+
+- **Windows Terminal** — Microsoft Store
+- **Windhawk** — UI customization engine
+- **RainMeter** — Desktop widgets
+- **YASB** — Status bar customization
+- **AutoHotkey v2** — Gesture automation
+
+</details>
+
+<details>
+<summary><strong>⚙️ Step 2: Configuration</strong></summary>
 
 Each module is independently configurable:
-- Edit specific config files in their respective directories
-- Merge configurations into your personal setup
-- Customize colors, fonts, and behaviors per preference
-- Create system restore points before making changes
+- Edit config files in their respective directories
+- Customize colors, fonts, and behaviors
+- Merge into your personal setup
+- **Create system restore points before changes**
+
+</details>
+
+<details>
+<summary><strong>✅ Step 3: Deployment</strong></summary>
+
+Follow individual module README files for activation and testing instructions.
+
+</details>
+
+---
+
+## ⭐ Key Highlights
+
+### 🛸 Advanced Mouse Gestures (AeonGlide)
+Your workflow exploit. Forget keyboard shortcuts.
+- ✨ Custom gesture-based command execution
+- 🎮 Game-mode detection with anti-cheat compatibility
+- 👻 Silent background operation (no bloat)
+- ⚙️ Fully configurable trigger bindings
+
+**[Learn more →](./Advanced-Mouse-Gestures/README.md)**
+
+### 🌫️ System-Level Customization
+Professional aesthetics, professional tools.
+- 🔮 Window transparency & blur effects
+- 📂 Explorer UI enhancement with Mica
+- 🔤 Font registry management
+- 🎚️ Desktop widget suite
+- 💻 Terminal profile synchronization
+- 📊 Custom status bars
+
+---
 
 ## 📸 Visual Reference
 
-Screenshots demonstrating the complete AEON-mod aesthetic are available in individual module folders.
+Each module includes screenshots demonstrating the **complete AEON-mod aesthetic**. Check individual module folders for visual previews.
 
-## 🔒 Safety & Maintenance
+---
 
-- **System Restore**: Create a restore point before applying registry modifications
-- **Testing**: Test configurations on non-critical machines or virtual environments first
-- **Backup**: Maintain backups of original configuration files
-- **Compatibility**: Verify Windows version compatibility before deployment
+## 🛡️ Safety & Maintenance
 
-## 📝 Contributing
+**Before you proceed, please read this:**
 
-Contributions, bug reports, and feature suggestions are welcome. Please open an issue or submit a pull request with:
-- Clear description of changes
-- Compatibility information (Windows version, required tools)
-- Testing results
-- Before/after screenshots (where applicable)
+| Action | Details |
+|--------|---------|
+| 🔄 **System Restore** | Create a restore point before applying registry modifications |
+| 🧪 **Testing** | Test on non-critical machines or VMs first |
+| 💾 **Backup** | Maintain backups of original configuration files |
+| ✅ **Compatibility** | Verify Windows version compatibility before deployment |
 
-## 🙏 Acknowledgments
+---
 
-This project draws inspiration from:
-- r/unixporn community standards
-- r/windowsrice customization practices
-- Open-source customization tools and communities
-- Modern UI/UX principles and glassmorphism design trends
+## 🔒 Disclaimer
 
-## 📄 License
+⚠️ **System modifications carry inherent risks.** Users are responsible for:
 
-This project is provided as-is for personal and educational use. Modify and distribute according to your needs.
-
-## ⚠️ Disclaimer
-
-System modifications carry inherent risks. Users are responsible for:
 - Creating backups before applying changes
 - Testing configurations in safe environments
 - Understanding registry modifications
 - Maintaining system stability and security
 
-AEON-mod maintainers assume no liability for system instability or data loss resulting from configuration deployment.
+AEON-mod maintainers **assume no liability** for system instability or data loss resulting from configuration deployment.
 
 ---
 
-**Last Updated**: 2026  
-**Maintained by**: AEON-mod  
-**Status**: Active Development
+## 🤝 Contributing
 
-⭐ If this project enhances your workflow, please consider starring the repository.
+We welcome contributions, bug reports, and feature suggestions!
+
+**How to contribute:**
+1. Open an issue or submit a pull request
+2. Include:
+   - Clear description of changes
+   - Windows version & required tools info
+   - Testing results
+   - Before/after screenshots (where applicable)
+
+---
+
+## 🙏 Acknowledgments
+
+This project draws inspiration from:
+
+- **r/unixporn** — Community standards for rice customization
+- **r/windowsrice** — Windows customization best practices
+- **Open-source community** — Customization tools and innovations
+- **Modern UI/UX principles** — Glassmorphism design trends
+
+---
+
+## 📋 License & Status
+
+- **License**: MIT License — Free to use and modify
+- **Status**: 🟢 Active Development
+- **Last Updated**: 2026
+- **Maintained by**: AEON-mod
+
+---
+
+<div align="center">
+
+**⭐ If this project enhances your workflow, please star the repository!**
+
+[View on GitHub](https://github.com/AEON-mod/Customization) • [Issues](https://github.com/AEON-mod/Customization/issues) • [Discussions](https://github.com/AEON-mod/Customization/discussions)
+
+</div>

@@ -1,251 +1,206 @@
-Windhawk Window & UI Styler 🎨
-Customize your Windows appearance with Windhawk mods: transparent windows, styled taskbar, custom start menu, notification themes, and semi-translucent effects for both Dark and Light mode.
+# Windhawk Customization Collection
 
-🌟 Features
-Feature	Description
-🌙 Dark Mode Codes	Styled notifications for dark theme
-☀️ Light Mode Codes	Styled notifications for light theme
-🪟 Transparent Windows	Semi-translucent window effects
-🖥️ Taskbar Styler	Customize taskbar appearance
-📱 Start Menu Codes	Custom start menu styling
-🔄 Translucent Windows	Full translucency effects
-⚡ One-Click Apply	Copy-paste codes into Windhawk
-📋 What's Included
-text
+A comprehensive collection of UI customization mods for [Windhawk](https://windhawk.net), enabling advanced styling of Windows notifications, windows, taskbars, and start menus across both dark and light themes.
+
+## Overview
+
+This repository contains pre-configured Windhawk mod codes designed to enhance your Windows experience with:
+
+- **Notification Styling**: Theme-specific notification customization
+- **Window Transparency**: Adjustable opacity and glass effects
+- **Taskbar Customization**: Color, transparency, and styling controls
+- **Start Menu Styling**: Custom appearance and layout modifications
+
+## Features
+
+| Feature | Description | Compatibility |
+|---------|-------------|-----------------|
+| Dark Mode Notifications | Optimized notification styling for dark theme | Dark Mode |
+| Light Mode Notifications | Optimized notification styling for light theme | Light Mode |
+| Semi-Translucent Windows | Subtle transparency effect (80% opacity) with blur | Both Modes |
+| Fully Translucent Windows | Enhanced glass effect (50% opacity) | Both Modes |
+| Taskbar Styler | Advanced taskbar appearance customization | Both Modes |
+| Start Menu Codes | Custom start menu styling | Both Modes |
+
+## Contents
+
+```
 Windhawk-Styler/
-├── Notification Styler Codes for Dark Mode.txt    # Dark mode notifications
-├── Notification Styler Codes for Light Mode.txt   # Light mode notifications
-├── Semi Translucent Windows.txt                   # Semi-translucent effects
-├── Start Menu Codes.txt                           # Start menu customization
-├── Taskbar Styler.txt                             # Taskbar styling
-├── Translucent Windows.txt                        # Full translucency
+├── Notification Styler Codes for Dark Mode.txt
+├── Notification Styler Codes for Light Mode.txt
+├── Semi Translucent Windows.txt
+├── Start Menu Codes.txt
+├── Taskbar Styler.txt
+├── Translucent Windows.txt
 └── README.md
-🚀 Quick Start
-Step 1: Install Windhawk
-Download Windhawk from windhawk.net
+```
 
-Install and run Windhawk
+## System Requirements
 
-Create an account (free) to sync settings
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| Windows Version | Windows 10 (1903+) | Windows 11 (22H2+) |
+| Windhawk | v1.0+ | Latest version |
+| RAM | 4 GB | 8 GB+ |
+| GPU | Any | DirectX 11+ |
 
-Step 2: Apply Styles
-For Dark Mode:
-Open Notification Styler Codes for Dark Mode.txt
+### Windows Compatibility
 
-Copy all code (Ctrl+A, Ctrl+C)
+| Version | Status |
+|---------|--------|
+| Windows 10 1903+ | ✅ Supported |
+| Windows 10 21H2 | ✅ Supported |
+| Windows 11 21H2+ | ✅ Supported |
+| Windows Server | ⚠️ Test before deployment |
 
-Open Windhawk → Click "+ Add mod" → "Import from clipboard"
+## Getting Started
 
-Paste code (Ctrl+V) → Click "Install"
+### 1. Install Windhawk
 
-Restart Explorer or log out/in
+1. Download Windhawk from [windhawk.net](https://windhawk.net)
+2. Install and launch the application
+3. Create a free account to sync settings across devices
 
-For Light Mode:
-Open Notification Styler Codes for Light Mode.txt
+### 2. Import Mods
 
-Copy all code
+#### Option A: Import from Clipboard (Recommended)
 
-Import into Windhawk same as above
+1. Open the desired `.txt` file from this repository
+2. Select all content (`Ctrl+A`) and copy (`Ctrl+C`)
+3. Launch Windhawk
+4. Click **+ Add mod** → **Import from clipboard**
+5. Paste the code (`Ctrl+V`)
+6. Click **Install mod**
+7. Restart Windows Explorer when prompted
 
-Install and restart
+#### Option B: Manual Entry
 
-For Windows Transparency:
-Open Semi Translucent Windows.txt or Translucent Windows.txt
-
-Copy code → Import to Windhawk
-
-Install → Adjust settings in Windhawk GUI
-
-For Taskbar:
-Open Taskbar Styler.txt
-
-Copy code → Import to Windhawk
-
-Customize colors, transparency, size in settings
-
-For Start Menu:
-Open Start Menu Codes.txt
-
-Copy code → Import to Windhawk
-
-Install and customize
-
-🎨 Which Files to Use?
-Your Goal	File to Use	Mode
-Styled notifications (dark theme)	Notification Styler Codes for Dark Mode.txt	Dark
-Styled notifications (light theme)	Notification Styler Codes for Light Mode.txt	Light
-Light transparency effect	Semi Translucent Windows.txt	Both
-Heavy transparency effect	Translucent Windows.txt	Both
-Customize taskbar	Taskbar Styler.txt	Both
-Customize start menu	Start Menu Codes.txt	Both
-Tip: You can use multiple mods together! Dark Mode notifications + Transparent Windows + Styled Taskbar = Full custom look ✨
-
-⚙️ How to Import Codes into Windhawk
-Method 1: Clipboard Import (Recommended)
-text
-1. Copy all text from .txt file (Ctrl+A → Ctrl+C)
-2. Open Windhawk
-3. Click "+ Add mod" button
-4. Select "Import from clipboard"
-5. Paste code (Ctrl+V)
-6. Click "Install mod"
-7. Restart Explorer when prompted
-Method 2: Manual Entry
-text
 1. Open Windhawk
-2. Click "+ Add mod" → "Create custom mod"
-3. Paste code into the code editor
-4. Name your mod (e.g., "Dark Notification Styler")
-5. Click "Save" → "Install"
-📸 Expected Results
-Dark Mode Notifications
-Styled dark notifications with custom colors
+2. Click **+ Add mod** → **Create custom mod**
+3. Paste the code into the editor
+4. Assign a descriptive name (e.g., "Dark Notification Styler")
+5. Click **Save** → **Install**
 
-Light Mode Notifications
-Styled light notifications with custom colors
+## Usage Guide
 
-Semi-Translucent Windows
-Windows with 80% opacity, blur effect
+### For Theme-Specific Notifications
 
-Fully Translucent Windows
-Windows with 50% opacity, glass effect
+**Dark Theme Users:**
+- Import: `Notification Styler Codes for Dark Mode.txt`
+- Provides optimized dark notification styling
 
-Styled Taskbar
-Custom taskbar with transparency and rounded corners
+**Light Theme Users:**
+- Import: `Notification Styler Codes for Light Mode.txt`
+- Provides optimized light notification styling
 
-Custom Start Menu
-Styled start menu with custom colors and layout
+⚠️ **Note**: Use only the mod that matches your system theme to avoid visual inconsistencies.
 
-🎯 Quick Settings Guide
-Transparency Levels
-File	Opacity	Best For
-Semi Translucent Windows.txt	80%	Subtle transparency
-Translucent Windows.txt	50%	Glass effect
-Mode Compatibility
-Mod	Dark Mode	Light Mode
-Notification Styler (Dark)	✅	❌
-Notification Styler (Light)	❌	✅
-Semi Translucent	✅	✅
-Translucent	✅	✅
-Taskbar Styler	✅	✅
-Start Menu	✅	✅
-🔧 Customization Tips
-Adjust Transparency
-Open Windhawk
+### For Window Transparency
 
-Find your transparency mod
+| File | Opacity | Effect | Best For |
+|------|---------|--------|----------|
+| `Semi Translucent Windows.txt` | 80% | Subtle transparency | Minimal visual impact |
+| `Translucent Windows.txt` | 50% | Enhanced glass effect | Maximum visual impact |
 
-Click the mod → "Settings" tab
+### For Taskbar & Start Menu
 
-Adjust Opacity slider (0-255)
+Both `Taskbar Styler.txt` and `Start Menu Codes.txt` are compatible with both themes and support:
+- Custom color schemes (hex code support)
+- Transparency adjustments
+- Layout modifications
 
-Click "Save"
+## Customization
 
-Change Colors
-Open Windhawk
+### Adjust Transparency
 
-Find Taskbar/Start Menu mod
+1. Open Windhawk
+2. Locate your transparency mod
+3. Click the mod → **Settings**
+4. Adjust the Opacity slider (0–255)
+5. Click **Save**
 
-Click "Settings"
+### Change Colors
 
-Change Background color, Border color
+1. Open Windhawk
+2. Select your Taskbar/Start Menu mod
+3. Navigate to **Settings**
+4. Update background and border colors using hex codes (e.g., `#1E1E1E`, `#0078D4`)
+5. Click **Save**
 
-Use hex codes (e.g., #1E1E1E, #0078D4)
+### Enable/Disable Mods
 
-Enable/Disable Mods
-Toggle switch in Windhawk main list
+Use the toggle switch next to each mod in Windhawk's main list. No reinstallation is required.
 
-No need to uninstall - just toggle off
+### Remove Mods
 
-Remove a Mod
-Open Windhawk
+1. Open Windhawk
+2. Select the mod to remove
+3. Click **Uninstall**
+4. Restart Windows Explorer
 
-Find the mod
+## Recommended Configurations
 
-Click "Uninstall"
-
-Restart Explorer
-
-⚠️ Important Notes
-Do ✅	Don't ❌
-Use Dark notification codes with Dark theme	Mix Dark notification codes with Light theme
-Use Light notification codes with Light theme	Apply all mods at once without testing
-Restart Explorer after installing	Edit .txt files before importing
-Test one mod at a time first	Use on enterprise/servers without testing
-Combination Guide
-Recommended combos:
-
-Dark Theme Setup:
-
-text
+### Dark Theme Setup
+```
 ✅ Notification Styler (Dark Mode)
 ✅ Semi Translucent Windows
 ✅ Taskbar Styler
 ✅ Start Menu Codes
-Light Theme Setup:
+```
 
-text
+### Light Theme Setup
+```
 ✅ Notification Styler (Light Mode)
 ✅ Translucent Windows
 ✅ Taskbar Styler
 ✅ Start Menu Codes
-🐛 Troubleshooting
-Problem	Solution
-Changes not visible	Restart Windows Explorer (Task Manager → Restart "Windows Explorer")
-Black screen/glitches	Disable transparency mod, reinstall
-Start menu broken	Uninstall Start Menu mod, restart Explorer
-Taskbar disappears	Uninstall Taskbar Styler, restart
-Notifications not styled	Make sure you're using correct Light/Dark file
-Mod won't install	Check Windhawk version (need v1.0+)
-Settings not saving	Run Windhawk as Administrator
-Quick Reset
-bash
-# If things go wrong:
+```
+
+## Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Changes not visible | Restart Windows Explorer (Task Manager → Right-click **Windows Explorer** → **Restart**) |
+| Black screen/glitches | Disable transparency mod, uninstall, and reinstall |
+| Start menu not responding | Uninstall Start Menu mod and restart Explorer |
+| Taskbar disappears | Uninstall Taskbar Styler and restart |
+| Notifications not styled correctly | Verify you're using the mod matching your system theme |
+| Mod installation fails | Ensure Windhawk is updated to v1.0+ |
+| Settings not persisting | Run Windhawk as Administrator |
+
+### Full Reset
+
+If issues persist:
+
 1. Open Windhawk
-2. Uninstall ALL mods
-3. Restart computer
-4. Reinstall mods one by one
-📜 System Requirements
-Requirement	Minimum	Recommended
-Windows	10 (1903+)	11 (22H2+)
-Windhawk	v1.0+	Latest
-RAM	4GB	8GB+
-GPU	Any	DirectX 11+
-🌐 Compatibility
-Windows Version	Compatible
-Windows 10 1903+	✅
-Windows 10 21H2	✅
-Windows 11 21H2	✅
-Windows 11 22H2	✅
-Windows 11 23H2	✅
-Windows Server	⚠️ Test first
-📸 Before & After
-Before (Default Windows):
+2. Uninstall all mods
+3. Restart your computer
+4. Reinstall mods one at a time to identify conflicts
 
-After (Full Custom Styling):
+## Best Practices
 
-🤝 Contributing
-Found a bug? Want new styles? Open an issue or submit custom codes!
+| ✅ Do | ❌ Don't |
+|------|---------|
+| Use dark notification codes with dark theme | Mix dark and light notification codes |
+| Test mods individually before combining | Apply all mods simultaneously |
+| Restart Explorer after installation | Edit `.txt` files before importing |
+| Create a system restore point before installation | Use on production/enterprise systems without testing |
+| Run Windhawk as Administrator | Share `.txt` files without documentation |
 
-📄 License
-MIT License - Free to use and modify
+## Important Disclaimer
 
-⚠️ Disclaimer:
-Modifying system UI can cause instability. Use at your own risk. Always create a system restore point before installing. Tested on Windows 10/11 with Windhawk v1.3+.
+⚠️ **Modifying system UI components may cause instability.** While thoroughly tested on Windows 10/11 with Windhawk v1.3+, use at your own risk. **Always create a system restore point before installation.**
 
-📁 Files in this repo:
+## Contributing
 
-Notification Styler Codes for Dark Mode.txt — Dark mode notification styling
+We welcome bug reports, feature requests, and custom mod submissions. Please open an issue or submit a pull request with your contributions.
 
-Notification Styler Codes for Light Mode.txt — Light mode notification styling
+## License
 
-Semi Translucent Windows.txt — Semi-translucent window effects
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-Start Menu Codes.txt — Start menu customization
+---
 
-Taskbar Styler.txt — Taskbar styling
+**Made with ❤️ for Windows customization enthusiasts**
 
-Translucent Windows.txt — Full translucency effects
-
-Made with ❤️ for Windows customization enthusiasts
-Star ⭐ this repo if the styling helps you!
+If this collection helps you achieve your desired look, please consider starring ⭐ this repository to show your support.

@@ -4,10 +4,6 @@
 <img width="1761" height="1009" alt="YASB Dashboard Alt View" src="https://github.com/user-attachments/assets/b0dae5cc-eb34-4773-a4a4-304c8be572b8" />
 <img width="505" height="431" alt="CPU Monitor Widget" src="https://github.com/user-attachments/assets/297edbc5-fac3-49e7-b910-fb4232f98037" />
 
-<img width="630" height="470" alt="Weather Widget" src="https://github.com/user-attachments/assets/23daa353-a205-427e-9824-38f566f74e0d" />
-<img width="457" height="572" alt="Network Status Widget" src="https://github.com/user-attachments/assets/63a2c215-fe2c-4120-ae4a-33ab44cb9ffd" />
-<img width="616" height="661" alt="Media Control Widget" src="https://github.com/user-attachments/assets/b3fc5be5-b8af-48a7-93a8-c454e06a8fd0" />
-
 ## Overview
 
 **YASB** is a lightweight, feature-rich Windows status bar providing real-time system monitoring and quick access to essential information. This configuration includes pre-configured widgets for CPU, RAM, clock, weather, battery, network status, and media controls—ready to use out of the box.

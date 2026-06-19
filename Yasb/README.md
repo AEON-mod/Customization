@@ -1,193 +1,116 @@
-# YASB Status Bar Configuration
+# 📊 YASB Status Bar Configuration
 
 <img width="1917" height="856" alt="YASB Dashboard Main View" src="https://github.com/user-attachments/assets/3ad8acda-94b0-4bb2-9ce4-193dc507a4d5" />
 <img width="1761" height="1009" alt="YASB Dashboard Alt View" src="https://github.com/user-attachments/assets/b0dae5cc-eb34-4773-a4a4-304c8be572b8" />
 
-## Overview
-
-**YASB** is a lightweight, feature-rich Windows status bar providing real-time system monitoring and quick access to essential information. This configuration includes pre-configured widgets for CPU, RAM, clock, weather, battery, network status, and media controls—ready to use out of the box.
+A lightweight, feature-rich Windows status bar with real-time system monitoring. This repository provides a ready-to-use configuration with pre-built widgets for CPU, RAM, clock, weather, battery, network, and media controls.
 
 ---
 
-## 🚀 Quick Start
+## ⚡ Quick Setup
 
 ### 1. Install YASB
-
 ```bash
 pip install yasb
 ```
 
-### 2. Install Configuration & Stylesheet (Recommended)
+### 2. Add Configuration Files
 
-This repository provides a ready-to-use configuration (`config.yaml`) and a stylesheet (`styles.css`). For YASB to load them, place both files in the YASB configuration directory.
+Copy `config.yaml` and `styles.css` to your YASB config directory:
 
-Location (Windows):
-
-```
-%APPDATA%\yasb\
-```
-
-Steps (professional, safe):
-
-1. Create the configuration directory (if it doesn't exist).
-2. Copy `config.yaml` and `styles.css` from this repository into the directory.
-3. Verify required watch flags in `config.yaml` so YASB can hot-reload changes.
-4. Start or reload YASB.
-
-PowerShell (recommended):
-
+**PowerShell (Recommended):**
 ```powershell
-# Create target folder (idempotent)
 $target = "$env:APPDATA\yasb"
 New-Item -ItemType Directory -Force -Path $target | Out-Null
-
-# Copy files from current folder to YASB config folder
-Copy-Item -Path .\config.yaml -Destination (Join-Path $target 'config.yaml') -Force
-Copy-Item -Path .\styles.css -Destination (Join-Path $target 'styles.css') -Force
-
-# Verify files
-Get-ChildItem -Path $target -Filter "config.yaml", "styles.css"
+Copy-Item -Path .\config.yaml, .\styles.css -Destination $target -Force
 ```
 
-Command Prompt (CMD):
-
+**Command Prompt:**
 ```cmd
 mkdir "%APPDATA%\yasb"
 copy config.yaml "%APPDATA%\yasb\config.yaml" /Y
 copy styles.css "%APPDATA%\yasb\styles.css" /Y
 ```
 
-Notes and verification:
-
-- Ensure the following options are set in `%APPDATA%\yasb\config.yaml`:
-
+### 3. Enable Auto-Reload
+Ensure your `config.yaml` has:
 ```yaml
-watch_stylesheet: true
 watch_config: true
+watch_stylesheet: true
 ```
 
-- If your stylesheet has a different filename or path, update `config.yaml` accordingly or use the default `styles.css` filename.
-- Use UTF-8 encoding (without BOM) for both files to avoid parsing issues.
-
-### Reloading and Applying Changes
-
-- Start YASB:
-
+### 4. Start YASB
 ```bash
 yasb
 ```
 
-- If YASB is already running, press `Ctrl+Shift+R` to reload configuration and stylesheet (when watch flags are enabled), or restart the application to ensure all changes take effect.
-
-### Backup & Restore (best practice)
-
-- Backup your working configuration before making changes:
-
-```powershell
-Copy-Item "$env:APPDATA\yasb\config.yaml" "$env:APPDATA\yasb\config.yaml.bak" -Force
-```
-
-- To restore:
-
-```powershell
-Copy-Item "$env:APPDATA\yasb\config.yaml.bak" "$env:APPDATA\yasb\config.yaml" -Force
-```
+Use `Ctrl+Shift+R` to reload changes after editing files.
 
 ---
 
-### Troubleshooting: Config & Stylesheet
+## 🎨 Available Widgets
 
-- Symptom: YASB ignores stylesheet or config changes
-  - Check `watch_stylesheet` and `watch_config` are set to `true`.
-  - Verify files are in `%APPDATA%\yasb` and readable by your user account.
-  - Inspect YASB logs in the terminal for parsing errors when launching `yasb`.
-
-- Symptom: Visual glitches after applying stylesheet
-  - Ensure `styles.css` is valid CSS and encoded as UTF-8.
-  - Temporarily revert to the provided `styles.css` to isolate the issue.
-
-- Symptom: Wallpaper paths not working
-  - Use absolute paths and escape backslashes (e.g., `C:\Users\Alice\Pictures`).
+| Widget | Purpose |
+|--------|---------|
+| 🖥️ **CPU** | Real-time CPU usage |
+| 🧠 **RAM** | Memory utilization |
+| 🕐 **Clock** | Time & date display |
+| 🌤️ **Weather** | Temperature (API key required) |
+| 🔋 **Battery** | Battery status & percentage |
+| 📶 **Network** | WiFi signal strength |
+| 🎵 **Media** | Now playing info |
 
 ---
 
-## 📊 Available Widgets
+## ⚙️ Customization
 
-| Widget | Function |
-|--------|----------|
-| **CPU** | Displays CPU usage percentage |
-| **RAM** | Shows memory utilization |
-| **Clock** | Current time and date |
-| **Weather** | Real-time temperature (requires API key) |
-| **Battery** | Battery percentage and status |
-| **Network** | WiFi signal strength indicator |
-| **Media** | Now playing information from media players |
-
----
-
-## 🎨 Customization Options
-
-### Change Bar Position
-
+### Bar Position & Appearance
 ```yaml
 bar:
-  position: "top"   # Options: "top" or "bottom"
+  position: "top"        # "top" or "bottom"
+  opacity: 90            # 0-100
+  blur: true             # Enable blur effect
 ```
 
-### Adjust Opacity
-
-```yaml
-bar:
-  opacity: 90       # Range: 0-100
-```
-
-### Enable Blur Effect
-
-```yaml
-bar:
-  blur: true
-```
-
-### Styling & Live Reload
-
-- Ensure `watch_stylesheet: true` in your `config.yaml` to enable automatic stylesheet reloading.
-- Edit `styles.css` in `%APPDATA%\yasb\styles.css` and YASB will apply your changes on save (if `watch_stylesheet` is enabled).
+### Edit Styles
+Modify `%APPDATA%\yasb\styles.css` — changes auto-apply when `watch_stylesheet: true`.
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+## ⌨️ Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl+Shift+R` | Reload configuration |
+| `Ctrl+Shift+R` | Reload config |
 | `Ctrl+Shift+T` | Switch theme |
 
 ---
 
-## 🔧 Troubleshooting
+## 🐛 Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| Status bar not appearing | Run `yasb` in terminal to verify installation and check for errors |
-| Weather widget not functioning | Ensure API key is correctly added in the `config.yaml` file |
-| Auto-start not working | Recreate the YASB shortcut in the startup folder (`shell:startup`) |
-| Configuration or stylesheet changes not applied | Confirm `config.yaml` and `styles.css` are in `%APPDATA%\yasb` and `watch_config` / `watch_stylesheet` are set to `true` |
+**Status bar not appearing?**
+- Run `yasb` in terminal and check for error messages
 
----
+**Weather widget failing?**
+- Verify API key in `config.yaml`
 
-## 📁 Repository Contents
+**Changes not applying?**
+- Confirm files are in `%APPDATA%\yasb`
+- Check that `watch_config` and `watch_stylesheet` are `true`
+- Use UTF-8 encoding (no BOM) for both files
 
-- **`config.yaml`** – Pre-configured status bar settings (ready to use)
-- **`styles.css`** – Theme and widget styles (copy to `%APPDATA%\yasb\styles.css`)
-- **`screenshots/`** – Preview images of the dashboard and individual widgets
-- **`README.md`** – This documentation file
+**Auto-start not working?**
+- Recreate YASB shortcut in Windows Startup folder (`shell:startup`)
 
 ---
 
-## 🤝 Support & Contribution
+## 📁 What's Included
 
-If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+- `config.yaml` – Pre-configured settings
+- `styles.css` – Theme & widget styling
+- `screenshots/` – Preview images
+- `README.md` – Documentation
 
 ---
 
-**Enhance your Windows desktop with real-time system insights. Star ⭐ if you find this helpful!**
+**Transform your Windows taskbar. Star ⭐ if you find this useful!**

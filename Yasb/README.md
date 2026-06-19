@@ -1,77 +1,128 @@
-<img width="1917" height="856" alt="Screenshot 2026-03-31 180110" src="https://github.com/user-attachments/assets/3ad8acda-94b0-4bb2-9ce4-193dc507a4d5" />
-<img width="1761" height="1009" alt="Screenshot 2026-03-31 190837" src="https://github.com/user-attachments/assets/b0dae5cc-eb34-4773-a4a4-304c8be572b8" />
-<img width="505" height="431" alt="Screenshot 2026-04-01 164844" src="https://github.com/user-attachments/assets/297edbc5-fac3-49e7-b910-fb4232f98037" />
+# YASB Status Bar Configuration
 
-<img width="630" height="470" alt="Screenshot 2026-03-31 175859" src="https://github.com/user-attachments/assets/23daa353-a205-427e-9824-38f566f74e0d" />
-<img width="457" height="572" alt="Screenshot 2026-03-31 175850" src="https://github.com/user-attachments/assets/63a2c215-fe2c-4120-ae4a-33ab44cb9ffd" />
-<img width="616" height="661" alt="Screenshot 2026-03-31 175905" src="https://github.com/user-attachments/assets/b3fc5be5-b8af-48a7-93a8-c454e06a8fd0" />
+<img width="1917" height="856" alt="YASB Dashboard Main View" src="https://github.com/user-attachments/assets/3ad8acda-94b0-4bb2-9ce4-193dc507a4d5" />
+<img width="1761" height="1009" alt="YASB Dashboard Alt View" src="https://github.com/user-attachments/assets/b0dae5cc-eb34-4773-a4a4-304c8be572b8" />
+<img width="505" height="431" alt="CPU Monitor Widget" src="https://github.com/user-attachments/assets/297edbc5-fac3-49e7-b910-fb4232f98037" />
 
-YASB Status Bar Config 🎯
-Simple Windows status bar with CPU, RAM, clock, weather, and more. Ready to use – just copy and run!
+<img width="630" height="470" alt="Weather Widget" src="https://github.com/user-attachments/assets/23daa353-a205-427e-9824-38f566f74e0d" />
+<img width="457" height="572" alt="Network Status Widget" src="https://github.com/user-attachments/assets/63a2c215-fe2c-4120-ae4a-33ab44cb9ffd" />
+<img width="616" height="661" alt="Media Control Widget" src="https://github.com/user-attachments/assets/b3fc5be5-b8af-48a7-93a8-c454e06a8fd0" />
 
-![YASB Screenshot]
+## Overview
 
-🚀 Quick Start
-Install YASB
+**YASB** is a lightweight, feature-rich Windows status bar providing real-time system monitoring and quick access to essential information. This configuration includes pre-configured widgets for CPU, RAM, clock, weather, battery, network status, and media controls—ready to use out of the box.
 
-bash
+---
+
+## 🚀 Quick Start
+
+### 1. Install YASB
+
+```bash
 pip install yasb
-Add Your Config
+```
 
-Download config.yaml
+### 2. Add Configuration
 
-Place it here:
-%APPDATA%\yasb\config.yaml
-Open ymal.config go to wallpaper section and paste your wallaper folder path
-Run YASB
+- Download the `config.yaml` file from this repository
+- Place it in your YASB configuration directory:
+  ```
+  %APPDATA%\yasb\config.yaml
+  ```
 
-bash
+### 3. Configure Wallpaper Path
+
+- Open `config.yaml` in your text editor
+- Navigate to the `wallpaper` section
+- Replace the placeholder with your wallpaper folder path
+
+### 4. Launch YASB
+
+```bash
 yasb
-Auto-Start (Optional)
+```
 
-Press Win + R → type shell:startup → Enter
+### 5. Set Up Auto-Start (Optional)
 
-Copy yasb shortcut to that folder
+To automatically launch YASB on system startup:
 
-📊 What You Get
-Widget	Shows
-CPU	CPU usage %
-RAM	Memory used
-Clock	Time & date
-Weather	Temperature (needs API key)
-Battery	Battery %
-Network	WiFi signal
-Media	Now playing
-🎨 Easy Customization
-Change position:
+1. Press `Win + R`
+2. Type `shell:startup` and press `Enter`
+3. Copy the YASB shortcut to the startup folder
 
-text
+---
+
+## 📊 Available Widgets
+
+| Widget | Function |
+|--------|----------|
+| **CPU** | Displays CPU usage percentage |
+| **RAM** | Shows memory utilization |
+| **Clock** | Current time and date |
+| **Weather** | Real-time temperature (requires API key) |
+| **Battery** | Battery percentage and status |
+| **Network** | WiFi signal strength indicator |
+| **Media** | Now playing information from media players |
+
+---
+
+## 🎨 Customization Options
+
+### Change Bar Position
+
+```yaml
 bar:
-  position: "top"   # or "bottom"
-Change opacity:
+  position: "top"   # Options: "top" or "bottom"
+```
 
-text
+### Adjust Opacity
+
+```yaml
 bar:
-  opacity: 90       # 0-100
-Turn on blur:
+  opacity: 90       # Range: 0-100
+```
 
-text
+### Enable Blur Effect
+
+```yaml
 bar:
   blur: true
-⌨️ Shortcuts
-Ctrl+Shift+R → Reload config
+```
 
-Ctrl+Shift+T → Switch theme
+---
 
-🐛 Troubleshooting
-Problem	Fix
-Bar not showing	Run yasb in terminal
-Weather not working	Add API key in config
-Auto-start fails	Recreate shortcut in startup folder
-📁 Files
-config.yaml – Main config (ready to use)
+## ⌨️ Keyboard Shortcuts
 
-screenshot.png – Preview
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+Shift+R` | Reload configuration |
+| `Ctrl+Shift+T` | Switch theme |
 
-Simple. Clean. Powerful.
-Star ⭐ if it helps!
+---
+
+## 🔧 Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Status bar not appearing | Run `yasb` in terminal to verify installation and check for errors |
+| Weather widget not functioning | Ensure API key is correctly added in the `config.yaml` file |
+| Auto-start not working | Recreate the YASB shortcut in the startup folder (`shell:startup`) |
+| Configuration not updating | Use `Ctrl+Shift+R` to reload the configuration |
+
+---
+
+## 📁 Repository Contents
+
+- **`config.yaml`** – Pre-configured status bar settings (ready to use)
+- **`screenshots/`** – Preview images of the dashboard and individual widgets
+- **`README.md`** – This documentation file
+
+---
+
+## 🤝 Support & Contribution
+
+If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+
+---
+
+**Enhance your Windows desktop with real-time system insights. Star ⭐ if you find this helpful!**

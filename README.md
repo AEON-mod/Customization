@@ -30,7 +30,7 @@ AEON-mod Customization delivers **production-ready solutions** for transforming 
 
 | Module | Purpose | Status |
 |--------|---------|--------|
-| **🛸 Advanced Mouse Gestures (AeonGlide)** | System-level mouse automation — your workflow exploit | ✅ Active |
+| **🛸 Navi-Gesture (AeonGlide)** | System-level mouse automation — your workflow exploit | ✅ Active |
 | **🌫️ Window Transparency Script** | Enable transparency and opacity effects on any application | ✅ Active |
 | **✨ Explorer Blur-Mica** | Apply Mica and blur effects to Windows File Explorer | ✅ Active |
 | **🔤 Font Change Commands** | Registry-based system font customization | ✅ Active |

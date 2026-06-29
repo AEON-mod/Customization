@@ -2,7 +2,8 @@
 
 <div align="center">
 
-**Transform your Windows desktop into a professional, aesthetically refined, and highly efficient workspace**
+**Transform any desktop into a professional, aesthetically refined, and highly efficient workspace**  
+*Windows · Linux · macOS*
 
 [![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)](https://github.com/AEON-mod/Customization)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
@@ -20,13 +21,16 @@ AEON-mod Customization delivers **production-ready solutions** for transforming 
 |---|---|---|
 | ⚡ | **Productivity Automation** | Advanced mouse gesture controls and intelligent system shortcuts |
 | 🔧 | **System Optimization** | Font management, terminal configuration, and status bar customization |
-| 🎭 | **Unified Theming** | Consistent aesthetic across Windows, Explorer, and development tools |
+| 🎭 | **Unified Theming** | Consistent aesthetic across Windows, Linux, and macOS |
+| 🐧 | **Linux / Hyprland** | GPU-accelerated live wallpapers and Caelestia dotfile integration |
 
 ---
 
 ## 📦 What's Inside
 
 ### Core Modules
+
+### 🪟 Windows
 
 | Module | Purpose | Status |
 |--------|---------|--------|
@@ -38,6 +42,12 @@ AEON-mod Customization delivers **production-ready solutions** for transforming 
 | **💻 Terminal** | Windows Terminal configuration with shell styling | ✅ Active |
 | **🛠️ Windhawk** | System-level UI customization engine configs | ✅ Active |
 | **📊 Yasb** | Yet Another Status Bar — customization & themes | ✅ Active |
+
+### 🐧 Linux
+
+| Module | Purpose | Status |
+|--------|---------|--------|
+| **🎬 mpvpaper Live Wallpaper** | GPU-decoded video wallpapers for Hyprland + Caelestia dotfiles | ✅ Active |
 
 ---
 
@@ -59,9 +69,15 @@ Transparency →  Modern glassmorphism for depth & visual interest
 
 ### Prerequisites
 
-- **Windows 10** (Build 22H2) or **Windows 11** (Build 23H2+)
-- **Administrator privileges** for system modifications
+**Windows modules:**
+- Windows 10 (Build 22H2) or Windows 11 (Build 23H2+)
+- Administrator privileges for system modifications
 - Individual tools per module (Windhawk, RainMeter, YASB, AutoHotkey v2)
+
+**Linux modules:**
+- Hyprland (Wayland compositor)
+- [Caelestia dotfiles](https://github.com/caelestia-dots/caelestia)
+- `mpvpaper`, `ffmpeg`, `jq` (see module README for details)
 
 ### Quick Start
 
@@ -121,7 +137,16 @@ Your workflow exploit. Forget keyboard shortcuts.
 - 👻 Silent background operation (no bloat)
 - ⚙️ Fully configurable trigger bindings
 
-**[Learn more →](./Advanced-Mouse-Gestures/README.md)**
+**[Learn more →](./Navi-Gesture/README.md)**
+
+### 🎬 mpvpaper Live Wallpaper *(Linux / Hyprland)*
+Your desktop, alive. Hardware-decoded video wallpapers with full Caelestia integration.
+- 🎮 NVDEC GPU decoding — ~20% CPU vs ~90% with naive setups
+- 🎨 Automatic color scheme extraction for Caelestia widgets
+- 🔄 One-keybind wallpaper cycling with reboot persistence
+- 🔧 Batch transcoder for 4K → screen-resolution optimization
+
+**[Learn more →](./mpvpaper-live-wallpaper/README.md)**
 
 ### 🌫️ System-Level Customization
 Professional aesthetics, professional tools.

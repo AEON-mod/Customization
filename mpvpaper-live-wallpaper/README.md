@@ -21,11 +21,9 @@ Play any **`.mp4`** · **`.mkv`** · **`.webm`** · **`.gif`** as your desktop w
 with auto-pause, NVENC hardware decoding, and full color scheme integration.
 
 <br>
-
 ---
 
 </div>
-
 <br>
 
 ## 🚀 Quick Start

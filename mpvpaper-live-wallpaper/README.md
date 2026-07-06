@@ -7,19 +7,14 @@
 # ✦ mpvpaper Live Wallpaper
 
 **Animated desktop wallpapers on Hyprland — crafted for [Caelestia](https://github.com/caelestia-dots/shell)**
-
 <br>
-
 <img src="https://img.shields.io/badge/hyprland-compositor-88C0D0?style=flat-square&labelColor=2E3440" />
 <img src="https://img.shields.io/badge/mpvpaper-backend-A3BE8C?style=flat-square&labelColor=2E3440" />
 <img src="https://img.shields.io/badge/NVENC-hardware_accel-BF616A?style=flat-square&labelColor=2E3440" />
 <img src="https://img.shields.io/badge/arch-linux-1793D1?style=flat-square&logo=archlinux&logoColor=white&labelColor=2E3440" />
-
 <br><br>
-
 Play any **`.mp4`** · **`.mkv`** · **`.webm`** · **`.gif`** as your desktop wallpaper  
 with auto-pause, NVENC hardware decoding, and full color scheme integration.
-
 <br>
 ---
 

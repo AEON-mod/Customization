@@ -1,0 +1,4 @@
+width: 500
+height: 800
+searchWidth: 800
+searchHeight: 800

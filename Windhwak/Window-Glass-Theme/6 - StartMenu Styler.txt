@@ -1,0 +1,107 @@
+theme: ''
+disableNewStartMenuLayout: legacyClassicLayout
+styleConstants:
+  - ''
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#UndockedRoot
+    styles:
+      - MaxWidth=0
+      - Margin=0
+  - target: Windows.UI.Xaml.Controls.Grid#AllAppsRoot
+    styles:
+      - Visibility=Visible
+      - Width=540
+      - Margin=-950,0,0,0
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MinWidth=380
+      - MaxWidth=380
+      - MaxHeight=670
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.AllAppsGridListView#AppsList
+    styles:
+      - Padding=220,3,6,16
+  - target: Grid#AllAppsPaneHeader
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.NavigationPaneView#NavigationPane
+    styles:
+      - Margin=0,0,0,0
+      - RenderTransform:=<TranslateTransform Y="-80" X="30" />
+  - target: StartDocked.AppListView#NavigationPanePlacesListView
+    styles:
+      - ''
+  - target: StartDocked.SearchBoxToggleButton#StartMenuSearchBox
+    styles:
+      - Margin=23,-101,23,14
+  - target: StartDocked.SearchBoxToggleButton
+    styles:
+      - Height=0
+  - target: Rectangle[4]
+    styles:
+      - Margin=0,-20,0,0
+  - target: StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager
+    styles:
+      - Margin=-20,0,20,0
+  - target: StartMenu.StartInnerFrame
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#RootContent
+    styles:
+      - MinWidth=380
+  - target: Grid#InnerContent
+    styles:
+      - Margin=0,12,0,0
+  - target: Border#AcrylicBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity="0" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".55" Opacity="1"/>
+      - BorderThickness=1
+  - target: Border#AppBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="1" TintLuminosityOpacity=".85" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="1" TintLuminosityOpacity="1" Opacity="1"/>
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=1
+  - target: StartDocked.NavigationPaneView
+    styles:
+      - Transform3D:=<CompositeTransform3D RotationZ="270" TranslateY="-480" TranslateX="50"/>
+  - target: StartDocked.AppListViewItem > Grid > ContentPresenter
+    styles:
+      - Transform3D:=<CompositeTransform3D RotationZ="90" TranslateY="40"/>
+  - target: StartDocked.PowerOptionsView
+    styles:
+      - Transform3D:=<CompositeTransform3D TranslateY="-240" TranslateX="220" RotationZ="90" />
+      - Margin=0,0,0,0
+  - target: StartDocked.AppListView#NavigationPanePlacesListView > Windows.UI.Xaml.Controls.Border
+    styles:
+      - ''
+      - CornerRadius=5
+      - Margin=0,0,15,0
+  - target: StartDocked.UserTileView#UserTile
+    styles:
+      - Visibility=Collapsed
+  - target: Border#AcrylicOverlay
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
+    styles:
+      - MinWidth=380
+      - MaxWidth=380
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent
+    styles:
+      - MinWidth=380
+      - MaxWidth=380
+themeResourceVariables:
+  - ''
+webContentStyles:
+  - target: ''
+    styles:
+      - ''
+webContentCustomJs: ''

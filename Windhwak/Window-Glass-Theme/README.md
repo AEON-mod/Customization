@@ -4,5 +4,5 @@
 <img width="3840" height="2160" alt="Preview_03" src="https://github.com/user-attachments/assets/61987b69-cecb-4d17-b15d-24362c9e6f66" />
 
   <br>
-  <b><i>Window_Glass-Theme.</i></b>
+  <b><i>Window-Glass-Theme.</i></b>
 </p>

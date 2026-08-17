@@ -39,8 +39,8 @@ One keybind. Zero friction.
 Don't want to touch any config files yourself? One command handles everything:
 
 ```bash
-git clone https://github.com/AEON-mod/Scripts.git
-cd Scripts/hypr-float-tab
+git clone https://github.com/AEON-mod/Customization.git
+cd Customization/hypr-float-tab
 ./install.sh
 ```
 

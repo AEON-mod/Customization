@@ -64,7 +64,7 @@ Prefer to do it yourself? Four steps:
 ### 1 — Copy the script
 
 ```bash
-cp Scripts/float-tab-toggle.sh ~/.config/hypr/scripts/
+cp Customization/float-tab-toggle.sh ~/.config/hypr/scripts/
 chmod +x ~/.config/hypr/scripts/float-tab-toggle.sh
 ```
 

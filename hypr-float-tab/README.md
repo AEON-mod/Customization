@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="banner.jpg" alt="hypr-float-tab" width="100%"/>
+  <img src="showcase.png" alt="hypr-float-tab" width="100%"/>
 </div>
 
 <br/>

@@ -25,7 +25,7 @@ with auto-pause, NVENC hardware decoding, and full color scheme integration.
 
 ```bash
 git clone https://github.com/AEON-mod/Customization
-cd Customization/mpvpaper-live-wallpaper
+cd Customization/Set-mpvpaper
 bash install.sh
 ```
 
